@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="414dp"
+        android:layout_height="430dp"
+        android:background="@color/purple_700"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/materialToolbar"
+        app:layout_constraintEnd_toEndOf="@id/materialToolbar"
+        app:layout_constraintStart_toStartOf="@id/materialToolbar"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="310dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="@id/materialToolbar"
+        app:layout_constraintStart_toStartOf="@id/materialToolbar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="419dp"
+        app:layout_constraintBottom_toTopOf="@id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@id/editTextTextPassword"
+        />
+    <EditText
+        android:id="@+id/editTextTextUser"
+        android:layout_width="310dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@id/materialToolbar"
+        app:layout_constraintStart_toStartOf="@id/materialToolbar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de usuario"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="419dp"
+        app:layout_constraintBottom_toTopOf="@id/editTextTextUser"
+        app:layout_constraintStart_toStartOf="@id/editTextTextUser"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="Inicio sesión"
+        android:textSize="55dp"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="181dp"
+        app:layout_constraintEnd_toEndOf="@id/materialToolbar"
+        app:layout_constraintStart_toStartOf="@id/materialToolbar"
+        app:layout_constraintTop_toTopOf="@id/materialToolbar"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
